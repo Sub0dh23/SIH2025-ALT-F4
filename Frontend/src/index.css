@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom font-face */
+@font-face {
+  font-family: 'Zalando Sans Expanded';
+  src: url('/fonts/ZalandoSansExpanded-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Apply the custom font globally */
+@layer base {
+  body {
+    @apply font-sans;
+  }
+}
+
+@layer base {
+  :root {
+    /* Base Colors */
+    --background: 212 12% 13%; /* #1C2127 */
+    --foreground: 210 14% 90%; /* #E1E4E8 */
+
+    /* Cards, Sidebar, and Main Content Areas */
+    --card: 218 15% 16%; /* #222831 */
+    --card-foreground: 0 0% 100%;
+
+    --popover: 218 15% 16%;
+    --popover-foreground: 0 0% 100%;
+
+    /* Primary Accent (Teal/Green for buttons, graphs) */
+    --primary: 165 78% 43%; /* #16C79A */
+    --primary-foreground: 210 100% 10%; /* Dark text for contrast */
+
+    /* Secondary Accent (Subtle buttons, inactive states) */
+    --secondary: 218 9% 25%; /* #393E46 */
+    --secondary-foreground: 0 0% 100%;
+
+    /* Muted & Subtle Colors */
+    --muted: 220 11% 18%; /* #2A2E34 */
+    --muted-foreground: 0 0% 100%; /* #FFFFFF */
+
+    /* Accents (Active/Selected items) */
+    --accent: 218 9% 25%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Destructive/Error */
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Borders & Rings */
+    --border: 214 9% 26%; /* #3A4048 */
+    --input: 218 15% 16%;
+    --ring: 165 78% 43%; /* Teal for focus */
+    
+    /* Other Tokens */
+    --radius: 0.75rem;
+  }
+
+  /* Keeping the dark theme as the default as per the design */
+  .dark {
+    /* You can define overrides for a light theme here if needed in the future,
+       but for now, we'll keep it consistent with the :root definition. */
+    --background: 212 12% 13%;
+    --foreground: 210 14% 90%;
+    --card: 218 15% 16%;
+    --card-foreground: 0 0% 100%;
+    --popover: 218 15% 16%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 165 78% 43%;
+    --primary-foreground: 210 100% 10%;
+    --secondary: 218 9% 25%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 220 11% 18%;
+    --muted-foreground: 0 0% 100%;
+    --accent: 218 9% 25%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 214 9% 26%;
+    --input: 218 15% 16%;
+    --ring: 165 78% 43%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Zalando Sans Expanded', sans-serif;
+  }
+}
+

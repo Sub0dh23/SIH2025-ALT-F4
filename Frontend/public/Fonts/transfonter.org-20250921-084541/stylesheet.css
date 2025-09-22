@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Zalando Sans Expanded';
+    src: url('ZalandoSansExpanded-Bold.woff2') format('woff2'),
+        url('ZalandoSansExpanded-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Zalando Sans Expanded';
+    src: url('ZalandoSansExpanded-ExtraBold.woff2') format('woff2'),
+        url('ZalandoSansExpanded-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Zalando Sans Expanded';
+    src: url('ZalandoSansExpanded-SemiBold.woff2') format('woff2'),
+        url('ZalandoSansExpanded-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Zalando Sans Expanded';
+    src: url('ZalandoSansExpanded-Regular.woff2') format('woff2'),
+        url('ZalandoSansExpanded-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
