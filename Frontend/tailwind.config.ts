@@ -75,7 +75,21 @@ export default {
 				sm: "calc(var(--radius) - 4px)",
 			},
 			fontFamily: {
-				sans: ["Zalando Sans Expanded", "sans-serif"],
+				sans: [
+					"Poppins",
+					"ui-sans-serif",
+					"system-ui",
+					"-apple-system",
+					"Segoe UI",
+					"Roboto",
+					"Helvetica Neue",
+					"Arial",
+					"Noto Sans",
+					"Apple Color Emoji",
+					"Segoe UI Emoji",
+					"Segoe UI Symbol",
+					"Noto Color Emoji",
+				],
 			},
 			boxShadow: {
 				fm: "0 2px 8px rgba(0, 0, 0, 0.1)",

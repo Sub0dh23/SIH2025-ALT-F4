@@ -217,8 +217,8 @@ const ExpandableCalendar = () => {
 									onClick={() => handleDateSelect(day)}
 								>
 									<div className="flex items-start justify-between mb-2">
-										<span
-											className={`text-sm font-medium ${
+                                        <span
+                                            className={`text-sm font-medium font-zalando-expanded ${
 												isToday
 													? "text-primary"
 													: isCurrentMonth
